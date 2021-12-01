@@ -1,0 +1,173 @@
+* {
+  max-width: 1200px;
+}
+body {
+  padding: 20px;
+}
+
+/*--PART SUPERIOR--*/
+header {
+  background-color: rgb(15, 15, 15);
+  padding: 20px;
+}
+.header-superior {
+  display: flex;
+  padding: 20px;
+  background-color: rgb(39, 57, 78);
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header-inferior {
+  display: flex;
+  padding: 20px;
+  background-color: rgb(240, 118, 58);
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.h-box2 {
+  height: 20px;
+  flex-basis: 70%;
+  margin: 0 20px 0 20px;
+  background-color: rgb(234, 88, 75);
+}
+.h-box1 {
+  height: 20px;
+  flex-basis: 15%;
+  background-color: rgb(234, 88, 75);
+}
+.h-box3 {
+  height: 20px;
+  flex-basis: 100%;
+  background-color: rgb(255, 204, 94);
+}
+
+/*--PART CENTRAL--*/
+section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(15, 15, 15);
+  padding: 20px;
+  margin-top: 20px;
+}
+article {
+  flex-basis: 72%;
+  margin-right: 20px;
+  background-color: rgb(68, 70, 94);
+  padding: 20px;
+}
+.ar-sup {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+.ar-inf {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+.ar-box1 {
+  height: 20px;
+  width: 50%;
+  background-color: rgb(22, 100, 164);
+}
+.ar-box2 {
+  height: 20px;
+  background-color: rgb(99, 153, 187);
+  margin-top: 20px;
+}
+aside {
+  width: 28%;
+  justify-content: flex-start;
+  align-items: center;
+  height: 140px;
+  background-color: rgb(249, 76, 71);
+  padding: 0 20px 0 20px;
+}
+.as-box1,
+.as-box2 {
+  height: 20px;
+  background-color: rgb(255, 227, 128);
+}
+.as-box1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/*--PART INFERIOR--*/
+footer {
+  background-color: rgb(15, 15, 15);
+  padding: 20px;
+  margin-top: 20px;
+}
+.f-box1 {
+  height: 20px;
+  background-color: rgb(228, 164, 52);
+}
+
+/*--MEDIA QUERY--*/
+@media screen and (max-width: 620px) {
+  section {
+    background-color: rgb(252, 246, 53);
+    display: block;
+  }
+  article {
+    margin: 0;
+    width: auto;
+  }
+  aside {
+    padding: 20px;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+  }
+  .as-box1 {
+    margin-top: 0px;
+  }
+  .as-box2 {
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .header-superior {
+    display: block;
+  }
+  .h-box2 {
+    margin: 20px 0;
+  }
+  .header-inferior {
+    margin-top: 20px;
+  }
+  section {
+    background-color: rgb(255, 217, 57);
+  }
+  article {
+    background-color: rgb(0, 71, 99);
+  }
+  .ar-sup,
+  .ar-inf {
+    display: block;
+  }
+  .ar-box1 {
+    margin-bottom: 20px;
+    width: auto;
+    background-color: rgb(85, 137, 145);
+  }
+  .ar-box2 {
+    background-color: rgb(151, 212, 197);
+  }
+  aside {
+    background-color: rgb(255, 120, 76);
+  }
+  .as-box1,
+  .as-box2 {
+    background-color: rgb(255, 171, 100);
+  }
+  .f-box1 {
+    background-color: rgb(255, 191, 96);
+  }
+}
