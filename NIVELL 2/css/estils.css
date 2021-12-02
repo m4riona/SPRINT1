@@ -98,12 +98,12 @@ h1 {
 section {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  /*align-items: center;*/
   background-color: white;
   margin-top: 10px;
 }
 article {
-  flex-basis: 72%;
+  flex-basis: 80%;
   margin-right: 10px;
   background-color: rgb(220, 220, 220);
   padding: 10px;
@@ -122,17 +122,57 @@ article {
   margin-top: 20px;
 }
 .ar-box1 {
-  height: 20px;
   width: 50%;
-  background-color: rgb(22, 100, 164);
+  background-color: rgb(245, 241, 241);
+  padding: 10px;
 }
 .ar-box2 {
   height: 20px;
-  background-color: rgb(99, 153, 187);
+  background-color: rgb(245, 241, 241);
   margin-top: 20px;
 }
+.foto-card1 {
+  background-image: url(../img/sakura.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 190px;
+  position: relative;
+}
+.foto-card2 {
+  background-image: url(../img/comida.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 190px;
+  position: relative;
+}
+.data-foto-card {
+  position: absolute;
+  top: 80%;
+  left: 2%;
+  color: rgb(239, 226, 142);
+}
+h2 {
+  background-color: rgb(238, 116, 99);
+  text-transform: uppercase;
+  color: rgb(245, 241, 241);
+  font-size: 1.25rem;
+  font-weight: lighter;
+  padding-top: 10px;
+  padding-left: 2%;
+  margin-top: 1%;
+}
+.columns {
+  column-count: 2;
+  column-gap: 10px;
+}
+article a {
+  text-decoration: none;
+  color: rgb(147, 147, 147);
+}
 aside {
-  width: 28%;
+  width: 20%;
   justify-content: flex-start;
   align-items: center;
   background-color: rgb(220, 220, 220);
