@@ -27,7 +27,6 @@ header {
 .header-inferior {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .navegador {
   flex-basis: 70%;
@@ -36,6 +35,7 @@ header {
 .navegador ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
 }
 .navegador a {
@@ -239,6 +239,8 @@ footer {
   }
 }
 @media screen and (max-width: 768px) {
+  .navegador {
+  }
   section {
     display: block;
   }
@@ -262,11 +264,12 @@ footer {
 @media screen and (max-width: 480px) {
   .header-superior {
     flex-direction: column;
-    align-items: center;
+    /*align-items: center;*/
     gap: 2%;
   }
   .navegador {
     margin: 20px 0;
+    /*align-self: stretch;*/
   }
   .header-inferior {
     margin-top: 20px;
@@ -279,10 +282,6 @@ footer {
     margin-bottom: 20px;
     width: auto;
   }
-  .columns {
-    column-count: 1;
-  }
-
   .as-box1 {
     margin-top: auto;
   }
