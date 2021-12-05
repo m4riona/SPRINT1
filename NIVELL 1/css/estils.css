@@ -110,7 +110,7 @@ footer {
 }
 
 /*--MEDIA QUERY--*/
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 768px) {
   section {
     background-color: rgb(252, 246, 53);
     display: block;
